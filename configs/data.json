@@ -1,0 +1,6 @@
+{
+  "box": "TNG100-1",
+  "snapshots": [50, 67, 84, 99],
+  "standardize": true,
+  "split": { "train": 0.70, "val": 0.15, "test": 0.15, "seed": 1337 }
+}

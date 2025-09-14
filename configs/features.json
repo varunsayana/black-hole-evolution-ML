@@ -1,0 +1,12 @@
+{
+  "features": ["bh_mass", "bh_acc", "stellar_mass", "halo_mass", "vel_disp", "sfr"],
+  "target": "bh_mass",
+  "label_map": {
+    "bh_mass": "Black Hole Mass",
+    "bh_acc": "BH Accretion Rate",
+    "stellar_mass": "Stellar Mass",
+    "halo_mass": "Halo Mass",
+    "vel_disp": "Velocity Dispersion",
+    "sfr": "Star Formation Rate"
+  }
+}
