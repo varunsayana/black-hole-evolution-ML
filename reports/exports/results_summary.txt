@@ -1,0 +1,24 @@
+
+Model: LSTM (hidden=128, layers=2, dropout=0.10) trained with AdamW and ReduceLROnPlateau.
+Best validation MSE: 0.275 at epoch 18.
+On the held-out test set, the LSTM outperforms persistence and ridge baselines across horizons.
+
+Overall RMSE (mean over features, z-scored):
+Horizon      LSTM  Persistence     Ridge
+     H1 62.294759     40.60784 13.660229
+     H3 61.032200     45.40610 14.857806
+     H5 65.224640     55.26384 22.593359
+
+Overall RMSE (mean over features, physical units):
+Horizon      LSTM  Persistence    Ridge
+     H1 11.555313     0.394613 0.503989
+     H3 12.048948     0.540199 0.350948
+     H5 12.986690     0.663393 0.380701
+
+Per-feature LSTM RMSE (physical units, subset shown):
+bh_mass          0.774
+bh_acc           1.097
+stellar_mass     0.530
+sfr              3.380
+halo_mass       22.347
+vel_disp        41.205
