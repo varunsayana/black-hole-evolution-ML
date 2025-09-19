@@ -1,1 +1,0 @@
-Schematic of the LSTM forecaster. At each timestep, the input vector comprises z-scored physical properties (BH Mass, BH Accretion, Stellar Mass, SFR, Halo Mass, Velocity Dispersion). The final hidden state feeds a dense head that outputs multi-horizon predictions for Δ={1,3,5}. We train with MSE loss and AdamW, using ReduceLROnPlateau and early stopping.
